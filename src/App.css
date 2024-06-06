@@ -1,0 +1,100 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+
+* {
+  font-family: cursive;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(165deg, purple, pink);
+}
+
+.calc-body {
+  width: 230px; 
+  height: 515px; 
+  border-radius: 25px; 
+  border: 2px solid rgb(24, 22, 22);
+  background-color: rgba(211, 211, 211, 0.75); 
+  margin: 10px;
+  padding: 10px;
+}
+
+.input-area {
+  width: 80%;
+  height: 112px; 
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.8); 
+  border-radius: 15px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.input-area .prev-operand {
+  color: #00ff00; 
+  font-size: 20px;
+}
+
+.input-area .curr-operand {
+  color: #ffffff;
+  font-size: 25px;;
+}
+
+button {
+  width: 45px; 
+  height: 61px; 
+  border: 2px solid transparent;
+  border-radius: 10px;
+  margin: 5px; 
+  font-size: 40px; 
+  background-color: blue;
+}
+
+.number {
+  background-color: rgba(0, 25, 255, 0.91);
+}
+
+.symbol {
+  background-color: rgba(255, 0, 214, 1);
+}
+
+.clear {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.equals {
+  background-color: rgba(20, 252, 0, 1);
+}
+
+.delete-btn {
+  background-color: rgba(0, 0, 0, 0); 
+
+}
+
+button:hover {
+  width: 46px;
+  height: 62px;
+  transform: rotate(5deg);
+  border-color: rgb(255, 251, 0);
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  width: 45px;
+  height: 61px;
+  background-color: rgba(0, 0, 0, 0); 
+  transform: rotate(0deg);
+  border-color: rgb(0, 0, 0, 0);
+  cursor: pointer;
+}
